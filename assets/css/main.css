@@ -1851,6 +1851,21 @@ button:active,
   padding: 10px;
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+	.top-corner {
+		display: none;
+	}
+	.image-scaled {
+		max-width: 100%;
+		max-height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .sub-header {
   background: black;
   padding: 10px;
