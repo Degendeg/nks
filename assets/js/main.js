@@ -99,6 +99,7 @@
 	speed: 1000,
 	pause: 4000,
 	pager: false,
+	controls: false,
 	slideMargin: 0
   });
 
