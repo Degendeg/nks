@@ -61,9 +61,9 @@
 
       // Scrollex.
       $section.scrollex({
-        mode: 'middle',
-        top: '-10vh',
-        bottom: '-10vh',
+        mode: 'top',
+        top: '-1vh',
+        bottom: '-1vh',
         initialize: function() {
 
           // Deactivate section.
@@ -82,29 +82,50 @@
             $this.addClass('active');
 
           }
+
+          // Otherwise, if this section's link is the one that's locked, unlock it.
+          else if ($this.hasClass('active-locked'))
+            $this.removeClass('active-locked');
+
         }
       });
-
     });
 
   // Scrolly.
   $('.scrolly').scrolly();
-  
+
   // Lightslider.
+  let imgNr = 2;
   $('#lightSlider').lightSlider({
-	gallery: true,
-	item: 1,
-	loop: true,
-	auto: true,
-	speed: 1000,
-	pause: 4000,
-	pager: false,
-	controls: false,
-	slideMargin: 0
+    gallery: true,
+    item: 1,
+    loop: true,
+    auto: true,
+    speed: 1000,
+    pause: 8000,
+    pager: false,
+    controls: false,
+    slideMargin: 0,
+    onBeforeSlide: function () {
+		$('.one').fadeTo('slow', 0.3, function() {
+			$(this).css('background-image', 'url(' + './images/banner' + imgNr + '.jpg' + ')');
+		}).fadeTo('slow', 1);
+    },
+    onAfterSlide: function () {
+		if (imgNr === 3) {
+			imgNr = 1;
+		}
+		else {
+			imgNr++;
+		}
+    }
   });
 
   // Toggle.
-  $('<div id="headerToggle">' + '<a href="#header" class="toggle"></a>' + '</div>').appendTo($body);
+  $('<div id="headerToggle" style="width: 100%; height: 60px; background: #181617">'
+  + '<a href="#header" class="toggle"></a>' + '<img src="./images/nks.jpg" style="width: 40%; margin-left: 30%; margin-top: 1%" />'
+  + '<a href="tel:+46171425425" class="icon fa-phone-square fa-2x" target="_blank" style="color: red; float: right; margin-right: 10px; margin-top: 7px; border: 0;"><span class="label">Phone</span></a>'
+  + '</div>').appendTo($body);
 
   // Header.
   $('#header')
