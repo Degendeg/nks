@@ -204,7 +204,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: 600;
   color: #fff;
   line-height: 1.5em;
 }
@@ -337,6 +337,7 @@ br.clear {
   padding: 10px;
   border-radius: 15px;
   min-height: 245px;
+  margin-top: 30px;
 }
 
 .container {
@@ -1616,6 +1617,40 @@ article:last-child {
 
 /* List */
 
+@media screen and (max-width: 736px) {
+	.services-list {
+	  color: red;
+	  font-size: 20px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  list-style: none;
+	  display: block !important;
+	  justify-content: flex-start !important;
+	  padding-bottom: 5px;
+	  margin-bottom: 20px;
+	}
+	.services-list li {
+	  margin: 0 0 15px 0;
+	  text-align: left;
+	}
+}
+
+.services-list {
+  color: red;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.services-list li:before {
+  content: "\f0ad"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
 ul {
   list-style: disc;
   padding-left: 1em;
@@ -1854,7 +1889,6 @@ button:active,
 /* Header */
 
 .first-header {
-  margin-top: 30px;
   font-size: 25px;
 }
 
@@ -2418,9 +2452,9 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: 14pt;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 0;
-    font-weight: 300;
+    font-weight: 600;
   }
   .container {
     padding: 0 15px 0 15px;
