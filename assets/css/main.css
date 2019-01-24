@@ -1998,7 +1998,7 @@ and (-webkit-device-pixel-ratio : 3) {
 }
 
 #header .icons a {
-  color: #41484c;
+  color: #ff0000;
   -moz-transition: color 0.35s ease-in-out;
   -webkit-transition: color 0.35s ease-in-out;
   -ms-transition: color 0.35s ease-in-out;
