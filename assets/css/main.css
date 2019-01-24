@@ -1957,6 +1957,10 @@ and (-webkit-device-pixel-ratio : 3) {
   font-weight: 600 !important;
 }
 
+.white {
+  color: white !important;
+}
+
 .red {
   color: red !important;
 }
