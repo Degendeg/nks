@@ -126,6 +126,17 @@
   + '<a href="#header" class="toggle"></a>' + '<img src="./images/nks.jpg" style="width: 40%; margin-left: 30%; margin-top: 1%" />'
   + '<a href="tel:+46171425425" class="icon fa-phone-square fa-2x" target="_blank" style="color: red; float: right; margin-right: 10px; margin-top: 7px; border: 0;"><span class="label">Phone</span></a>'
   + '</div>').appendTo($body);
+  
+  $('.to-top-btn').click(function () {
+	const scrollToTop = () => {
+	  const c = document.documentElement.scrollTop || document.body.scrollTop;
+	  if (c > 0) {
+		window.requestAnimationFrame(scrollToTop);
+		window.scrollTo(0, c - c / 20);
+	  }
+	};
+	scrollToTop();
+  });
 
   // Header.
   $('#header')

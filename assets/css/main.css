@@ -1630,6 +1630,16 @@ article:last-child {
 
 /* List */
 
+.to-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: red;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 736px) {
 	.services-list {
 	  color: red;
