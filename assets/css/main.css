@@ -154,6 +154,18 @@ textarea {
   appearance: none;
 }
 
+/* Blog */
+.blog-frame {
+	width: 800px;
+	height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-frame {
+	width: 100%;
+  }
+}
+
 /* Basic */
 
 html {
