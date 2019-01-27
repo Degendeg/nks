@@ -64,10 +64,13 @@
 						<li>
 						<header class="main-header">
 							<div class="first-header">
-								<h2 class="alt">VÄLOMMEN!</h2>
-								<h4 class="red fat">NK's Bilcenter</h4>
+								<h2 class="alt">VÄLKOMMEN!</h2>
+								<h3 class="alt red">Till NK's Bilcenter</h3>
 								<br />
-								<h3>En bra deal för din bil - <a href="#contact" style="font-style: italic;">kontakta oss här!</a></h3>
+								<p>
+									GÖR EN BRA DEAL FÖR DIN BIL OCH BOKA DIN TID IDAG - 
+									<a href="#contact" style="font-style: italic;">KONTAKTA OSS HÄR!</a>
+								</p>
 							</div>
 						</header>
 						</li>
@@ -186,9 +189,12 @@
 							<hr style="opacity: 0.1" />
 						</header>
 
-						<!-- <a href="#" class="image featured" style="pointer-events: none"><img src="images/pic08.jpg" alt="" class="image-scaled" /></a> -->
+						<a href="#" class="image featured" style="pointer-events: none"><img src="images/pic08.jpg" alt="" class="image-scaled" /></a>
+						<p>KOMMER SNART!</p>
+						<!-- 						
 						<center><div class="loading">Laddar...</div></center>
-						<iframe src="http://nksbilcenter.se/blog" class="featured blog-frame" framborder="0" align="middle" onload="$('.loading').hide()"></iframe>
+						<iframe src="http://nksbilcenter.se/blog" class="featured blog-frame" framborder="0" align="middle" onload="$('.loading').hide()"></iframe> 
+						-->
 
 					</div>
 				</section>
@@ -225,14 +231,16 @@
 						<p>
 						Om du har några frågor eller kommentarer angående oss eller ditt fordon, var god fyll i kontaktformuläret nedan. <br />
 						Annars kan du nå oss på följande: <br />
-						<strong class="fat">Garagevägen 2, 74940 Enköping <br/>
-						<a href="mailto:nksbilcenter@outlook.com" target="_top">nksbilcenter@outlook.com</a>
+						<i class="icon fa fa-map-marker red"></i> <strong class="fat">Garagevägen 2, 74940 Enköping <br/>
+						<i class="icon fa fa-envelope red"></i> <a href="mailto:nksbilcenter@outlook.com" target="_top">nksbilcenter@outlook.com</a>
 						</strong></p>
 
-						<form action="https://formspree.io/sebbed89@hotmail.com"" method="POST">
+						<form action="https://formspree.io/nksbilcenter@outlook.com" method="POST">
 							<div class="row">
-								<div class="col-6 col-12-mobile"><input type="text" name="name" id="name" placeholder="Namn" /></div>
-								<div class="col-6 col-12-mobile"><input type="email" name="email" id="email" placeholder="E-post" /></div>
+								<div class="col-12 col-12-mobile"><input type="text" name="name" id="name" placeholder="Namn" required /></div>
+								<div class="col-12 col-12-mobile"><input type="number" name="number" id="number" placeholder="Telefonnummer" required /></div>
+								<div class="col-12 col-12-mobile"><input type="number" name="miles" id="miles" placeholder="Miltal" required /></div>
+								<div class="col-12 col-12-mobile"><input type="text" name="reg" id="reg" placeholder="Regnr" required /></div>
 								<div class="col-12">
 									<textarea name="message" placeholder="Meddelande"></textarea>
 								</div>

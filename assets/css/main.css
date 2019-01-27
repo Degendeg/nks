@@ -1724,6 +1724,7 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="number"],
 form input[type="password"],
 form select,
 form textarea {
@@ -1911,14 +1912,6 @@ button:active,
 
 /* Header */
 
-.first-header {
-  font-size: 25px;
-}
-
-.first-header h2 {
-  font-weight: bold;
-}
-
 .bottom-corner {
   text-align: center;
   margin-bottom: 20px;
@@ -1941,10 +1934,6 @@ and (-webkit-device-pixel-ratio : 3) {
 	.top-corner {
 		display: none;
 	}
-	.first-header h2 {
-	  font-weight: bold;
-	  font-size: 30px;
-	}
 	.image-scaled {
 		max-width: 100%;
 		max-height: 100%;
@@ -1963,7 +1952,6 @@ and (-webkit-device-pixel-ratio : 3) {
 }
 
 .fat {
-  font-size: 30px !important;
   font-weight: 600 !important;
 }
 
