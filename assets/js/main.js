@@ -106,7 +106,6 @@
     pager: false,
     controls: false,
     slideMargin: 0,
-	swipeThreshold: 400,
     onBeforeSlide: function () {
 		$('.one').fadeTo('slow', 0.8, function() {
 			$(this).css('background-image', 'url(' + './images/banner' + imgNr + '.jpg' + ')');
